@@ -35,7 +35,6 @@ class FondosScreen extends ConsumerWidget {
         builder: (context, constraints) {
           final width = constraints.maxWidth;
 
-          // 👉 Detecta mobile
           if (width < 768) {
             return ListView.separated(
               padding: const EdgeInsets.all(16),
@@ -48,7 +47,6 @@ class FondosScreen extends ConsumerWidget {
             );
           }
 
-          // 👉 Tablet/Desktop
           final columns = getCrossAxisCount(width);
           final aspectRatio = getAspectRatio(width);
 

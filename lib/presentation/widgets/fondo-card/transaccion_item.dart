@@ -31,20 +31,17 @@ class TransaccionItem extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Nombre del fondo
             Text(
               transaccion.fondoNombre,
               style: Theme.of(context).textTheme.titleLarge,
             ),
             const SizedBox(height: 8),
 
-            // Monto y fecha
             Text('Monto: $formattedMonto'),
             Text('Fecha: $formattedFecha'),
 
             const SizedBox(height: 12),
 
-            // Tipo y botón (en una fila)
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [

@@ -39,12 +39,10 @@ class _SuscripcionScreenState extends ConsumerState<SuscripcionScreen> {
       return;
     }
 
-    // Actualizar saldo
     ref
         .read(usuarioProvider.notifier)
         .update((u) => Usuario(saldo: u.saldo - fondo.montoMinimo));
 
-    // Registrar transacción
     final nueva = Transaccion(
       fondoId: fondo.id,
       fondoNombre: fondo.nombre,
@@ -60,7 +58,7 @@ class _SuscripcionScreenState extends ConsumerState<SuscripcionScreen> {
       SnackBar(content: Text('Suscripción exitosa a ${fondo.nombre}')),
     );
 
-    Navigator.pop(context); // Volver a pantalla anterior
+    Navigator.pop(context);
   }
 
   @override

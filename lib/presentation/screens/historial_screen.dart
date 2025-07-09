@@ -24,7 +24,7 @@ class HistorialScreen extends ConsumerWidget {
                   left: 16,
                   right: 16,
                   top: 16,
-                  bottom: 32, // Aumentamos un poco el padding inferior
+                  bottom: 32,
                 ),
                 child: ListView.separated(
                   itemCount: transacciones.length,
@@ -42,7 +42,6 @@ class HistorialScreen extends ConsumerWidget {
                                     t.tipo == TipoTransaccion.cancelacion,
                               )
                           ? () {
-                              // Sumar el monto de vuelta al saldo
                               ref
                                   .read(usuarioProvider.notifier)
                                   .update(
@@ -51,7 +50,6 @@ class HistorialScreen extends ConsumerWidget {
                                     ),
                                   );
 
-                              // Agregar nueva transacción tipo cancelación
                               final nueva = Transaccion(
                                 fondoId: transaccion.fondoId,
                                 fondoNombre: transaccion.fondoNombre,

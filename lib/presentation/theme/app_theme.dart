@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AppTheme {
-  static const Color primaryColor = Color(0xFF2E7D32); // Verde elegante
+  static const Color primaryColor = Color(0xFF2E7D32); 
 
   static ThemeData get lightTheme {
     return ThemeData(

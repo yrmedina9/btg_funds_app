@@ -5,7 +5,7 @@ int getCrossAxisCount(double width) {
 }
 
 double getAspectRatio(double width) {
-  if (width < 768) return 1; // 👈 cards más cuadradas en mobile
+  if (width < 768) return 1;
   if (width < 1024) return 1.3;
   return 1.4;
 }

@@ -15,7 +15,8 @@ void main() {
     await tester.pumpWidget(
       MaterialApp(
         home: Scaffold(
-          body: SingleChildScrollView(
+          body: SizedBox(
+            height: 500,
             child: Padding(
               padding: const EdgeInsets.all(16),
               child: FondoCard(fondo: fondo),
