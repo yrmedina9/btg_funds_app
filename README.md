@@ -107,7 +107,7 @@ flutter run
 
 Yonathan Ramos Medina  
 💼 Desarrollador Frontend & Flutter  
-📧 [Tu correo o LinkedIn]
+📧 [yrmedina9@gmail.com]
 
 ---
 
