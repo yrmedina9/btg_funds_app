@@ -66,10 +66,8 @@ flutter test
 
 Agrega aquí imágenes si deseas mostrar vistas del app:
 
-```md
-![Fondos disponibles](screenshots/fondos_screen.png)
-![Historial](screenshots/historial_screen.png)
-```
+![Fondos disponibles](./screenshots/fondos_screen.png)  
+![Historial](./screenshots/historial_screen.png)
 
 ---
 
